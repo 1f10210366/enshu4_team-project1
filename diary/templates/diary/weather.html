@@ -1,0 +1,61 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>天気を調べよう！</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'diary/weather.css' %}">
+    <script src="{% static 'diary/weather.js' %}"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <img src="{%static 'diary/weather.png'}" alt="ロゴ"></a>
+    </div>
+    <div id="container">
+      <h1>天気を調べよう！</h1>
+      <p>
+        <input id="input-address" type="text">
+        <button onclick="findWeather()">天気を見る</button>
+      </p>
+
+      <div id="left">
+        <h2><span id="city"> *** </span> の天気</h2>
+        <table>
+          <tr>
+            <th>天気</th>
+            <td id="td-weather"> *** </td>
+          </tr>
+          <tr>
+            <th>気温 (Degree)</th>
+            <td id="td-temperature"> *** </td>
+          </tr>
+          <tr>
+            <th>湿度 (%)</th>
+            <td id="td-humidity"> *** </td>
+          </tr>
+          <tr>
+            <th>気圧 (hPa)</th>
+            <td id="td-pressure"> *** </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="right">
+        <ul>
+          <li>緯度 : <span id="latitude">***</span></li>
+          <li>経度 : <span id="longitude">***</span></li>
+        </ul>
+        <div id="map"></div>
+      </div>
+    </div>
+
+    
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYSeZRkkIEUkvEc1Ut7UYs7q0lLRZds94&callback=initMap"
+      async defer></script>
+  </body>
+
+</html>
