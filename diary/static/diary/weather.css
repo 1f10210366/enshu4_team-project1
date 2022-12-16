@@ -6,7 +6,7 @@ body {
 
 h1 {
   border-bottom : solid 1px #17194c;
-  color: red;
+  color: rgb(124, 207, 231);
 }
 
 h2 {
@@ -20,8 +20,8 @@ table {
 }
 
 th {
-  background-color : #17194c;
-  color : #ffffff;
+  background: radial-gradient(circle at 50%, rgba(0, 232, 248, 0.7) 0%,rgba(210, 210, 211, 0.7) 100%);
+  color : #eeeeee;
   padding : 5px 10px 5px 10px;
 }
 
@@ -48,9 +48,10 @@ button {
 }
 
 #header {
-  background-color : #17194c;
+  background-color : #c1c2da;
   padding : 10px 20px 10px 20px;
   height: 40px;
+  background: radial-gradient(circle at 50%, rgba(0, 232, 248, 0.7) 0%,rgba(210, 210, 211, 0.7) 100%);
 }
 
 #header img {
