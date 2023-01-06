@@ -9,3 +9,6 @@ def diary(request):
 
 def index(request):
   return render(request, 'diary/index.html')
+
+def schedule(request):
+  return render(request, 'diary/schedule.html')

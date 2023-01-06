@@ -18,7 +18,6 @@ from django.urls import path,include
 import diary.views
 
 urlpatterns = [
-    path('', diary.views.index),
-    path('diary/',include("diary.urls")),
+    path('', include("diary.urls")),
     path('admin/', admin.site.urls),
 ]
