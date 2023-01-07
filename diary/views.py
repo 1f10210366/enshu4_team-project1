@@ -6,7 +6,7 @@ from django.urls import reverse_lazy
 # Create your views here.
 
 class IndexView(TemplateView):
-  template_name = 'index.html'
+  template_name = 'diary/index.html'
 
 def weather(request):
   return render(request,'diary/weather.html')
