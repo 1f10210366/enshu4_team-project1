@@ -1,9 +1,6 @@
 from django.shortcuts import render
-from . import views
 from django.views.generic import TemplateView
 from django.views.generic import CreateView
-from django import forms
-from .models import Diary
 
 # Create your views here.
 
