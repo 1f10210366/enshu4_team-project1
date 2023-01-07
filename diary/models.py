@@ -2,7 +2,6 @@ from django.db import models
 from django.utils import timezone
 import uuid
 
-# Create your models here.
 
 class Diary(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
