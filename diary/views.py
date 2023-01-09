@@ -19,9 +19,9 @@ def schedule(request):
   return render(request, 'diary/schedule.html')
 
 class DiaryCreateView(CreateView):
-  template_name = 'diary_create.html'
+  template_name = 'diary/diary_create.html'
   form_class = DiaryForm
   success_url = reverse_lazy('diary:diary_create_complete')
 
 class DiaryCreateCompleteView(TemplateView):
-  template_name = 'diary_create_complete.html'
+  template_name = 'diary/diary_create_complete.html'
