@@ -1,8 +1,11 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.views.generic import CreateView
+from django.views.generic import ListView
+from django.views.generic import DetailView
 from django.urls import reverse_lazy
 from .forms import DiaryForm
+from .models import Diary
 
 # Create your views here.
 
@@ -25,3 +28,11 @@ class DiaryCreateView(CreateView):
 
 class DiaryCreateCompleteView(TemplateView):
   template_name = 'diary/diary_create_complete.html'
+
+class DiaryListView(ListView):
+    template_name = 'diary/diary_list.html'
+    model = Diary
+
+class DiaryDetailView(DetailView):
+    template_name = 'diary/diary_detail.html'
+    model = Diary
