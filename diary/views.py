@@ -65,7 +65,7 @@ class DiaryDetailView(DetailView):
     model = Diary
 
 class DiaryUpdateView(UpdateView):
-    template_name = 'diary_update.html'
+    template_name = 'diary/diary_update.html'
     model = Diary
     fields = ('date', 'title', 'text',)
     success_url = reverse_lazy('diary:diary_list')
