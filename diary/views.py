@@ -51,7 +51,7 @@ def schedule(request):
 class DiaryCreateView(CreateView):
   template_name = 'diary/diary_create.html'
   form_class = DiaryForm
-  success_url = reverse_lazy('diary:diary_create_complete')
+  success_url = reverse_lazy('diary:diary')
 
 class DiaryCreateCompleteView(TemplateView):
   template_name = 'diary/diary_create_complete.html'
