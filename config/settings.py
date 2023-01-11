@@ -110,6 +110,10 @@ LANGUAGE_CODE = 'ja'
 
 TIME_ZONE = 'Asia/Tokyo'
 
+LOGIN_URL = "diary:login"      
+LOGIN_REDIRECT_URL = "diary:home"      
+LOGOUT_REDIRECT_URL = "diary:top"
+
 USE_I18N = True
 
 USE_TZ = True
@@ -126,3 +130,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+

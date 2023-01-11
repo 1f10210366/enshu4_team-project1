@@ -7,7 +7,30 @@ from django.urls import reverse_lazy
 from .forms import DiaryForm
 from .models import Diary
 
+
+
 # Create your views here.
+from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+
+from . import forms
+
+
+class TopView(TemplateView):
+    template_name = "diary/top.html"
+
+class HomeView(LoginRequiredMixin, TemplateView):
+    template_name = "diary/home.html"
+
+class LoginView(LoginView):
+    """ログインページ"""
+    form_class = forms.LoginForm
+    template_name = "diary/login.html"
+
+class LogoutView(LoginRequiredMixin, LogoutView):
+    """ログアウトページ"""
+    template_name = "diary/logout.html"
 
 class IndexView(TemplateView):
   template_name = 'diary/index.html'

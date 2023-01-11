@@ -3,7 +3,11 @@ from . import views
 
 app_name = 'diary'
 urlpatterns = [
-    path("", views.IndexView.as_view(), name="index"),
+    path("", views.TopView.as_view(), name="top"),
+    path("home/", views.HomeView.as_view(), name="home"),
+    path("login/", views.LoginView.as_view(), name="login"),
+    path("logout/", views.LogoutView.as_view(), name="logout"),
+    #path("", views.IndexView.as_view(), name="index"),
     path("diary/", views.diary, name="diary"),
     path("whather/", views.weather, name="weather"),
     path("schedule/", views.schedule, name="schedule"), 
