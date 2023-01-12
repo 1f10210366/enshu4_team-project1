@@ -7,14 +7,16 @@
         <link rel="stylesheet" type="text/css" href="{% static 'diary/css/diary_all.css' %}">
     </head>
     <body>
-
-    <form method="post">
+        
+    <div>
+        <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit">投稿</button>
-    </form>
+        </form>
+        <a href="{% url 'diary:diary' %}">戻る</a>
+    </div>
     
-    <a href="{% url 'diary:diary' %}">戻る</a>
 
     </body>
 </html>
