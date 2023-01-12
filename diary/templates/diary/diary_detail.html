@@ -7,6 +7,7 @@
         <title>MyDiaryApp</title>
     </head>
     <body>
+        <div>
         <h1>日記の詳細</h1>
         <p>{{ diary.date }}</p>
         <p>{{ diary.title }}</p>
@@ -15,5 +16,6 @@
         <a href="{% url 'diary:diary_update' diary.pk %}">編集</a>
         <a href="{% url 'diary:diary_delete' diary.pk %}">削除</a>
         <a href="{% url 'diary:diary' %}">戻る</a>
+        </div>
     </body>
 </html>
