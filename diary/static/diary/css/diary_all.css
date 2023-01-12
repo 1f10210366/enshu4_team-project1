@@ -1,10 +1,18 @@
 div {
-    margin: 0 0 0 10;
+    margin-left: 10%;
+    margin-top: 10%;
 
   }
 
 h1 {
-    background-color: aqua;
-    
-   
+    color: rgb(124, 207, 231);
+
 }
+
+h2{
+    background: radial-gradient(circle at 50%, rgba(0, 232, 248, 0.7) 0%,rgba(210, 210, 211, 0.7) 100%);
+    color : #eeeeee;
+    padding : 5px 10px 5px 10px;
+    margin-right: 50%;
+}
+

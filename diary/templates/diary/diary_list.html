@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'diary/css/diary_all.css' %}">
+    <link href="diary_all.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 {% for diary in diary_list %}
@@ -14,4 +15,19 @@
 {% endfor %}
 <a href="{% url 'diary:diary' %}">戻る</a>
 </body>
+=======
+    <head>
+        <meta charset="UTF-8">
+        <title>MyDiaryApp</title>
+    </head>
+    <body>
+        {% for diary in diary_list %}
+            <p>
+                {{ diary.date }}
+                <a href="{% url 'diary:diary_detail' diary.pk %}">{{ diary.title }}</a>
+            </p>
+        {% endfor %}
+        <a href="{% url 'diary:diary' %}">戻る</a>
+    </body>
+>>>>>>> f0f86568c754d12a05ffbc83488bdd9efeac9854
 </html>
