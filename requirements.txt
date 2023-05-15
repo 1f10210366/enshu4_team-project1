@@ -1,3 +1,5 @@
 django
 django-heroku
 gunicorn
+
+pip freeze > requirements.txt
