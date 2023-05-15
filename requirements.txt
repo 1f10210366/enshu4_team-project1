@@ -1,5 +1,4 @@
 django
 django-heroku
 gunicorn
-
-pip freeze > requirements.txt
+dj_database_url
