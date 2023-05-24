@@ -24,6 +24,25 @@ function findWeather() {
   .catch(apiError);
 }
 
+
+function displayWeather(result) {
+
+  let city = document.getElementById('city');
+  let weather = document.getElementById('td-weather');
+  let temperature = document.getElementById('td-temperature');
+  let humidity = document.getElementById('td-humidity');
+  let pressure = document.getElementById('td-pressure');
+  
+  city.textContent = result.name;
+  weather.textContent = result.weather[0].main;
+  temperature.textContent = result.main.temp;
+  humidity.textContent = result.main.humidity;
+  pressure.textContent = result.main.pressure;
+
+  // 5. 天気を表示する
+  
+}
+
 function displayCoordinate(result) {
 
   if (result == null) {
@@ -59,21 +78,5 @@ function displayCoordinate(result) {
 
 }
 
-function displayWeather(result) {
 
-  let city = document.getElementById('city');
-  let weather = document.getElementById('td-weather');
-  let temperature = document.getElementById('td-temperature');
-  let humidity = document.getElementById('td-humidity');
-  let pressure = document.getElementById('td-pressure');
-  
-  city.textContent = result.name;
-  weather.textContent = result.weather[0].main;
-  temperature.textContent = result.main.temp;
-  humidity.textContent = result.main.humidity;
-  pressure.textContent = result.main.pressure;
-
-  // 5. 天気を表示する
-  
-}
 
