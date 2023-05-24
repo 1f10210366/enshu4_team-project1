@@ -18,7 +18,7 @@ function findWeather() {
   let inputAddress = document.getElementById('input-address');
   let address = inputAddress.value;
 
-  fetch('https://maps.googleapis.com/maps/api/geocode/json?address=' + encodeURI(address) + '&key=' + API_KEY_GOOGLE)
+  fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + x_lat + '&lon=' + y_lon + '&appid=' + API_KEY_WEATHER)
   .then(response => response.json())
   .then(displayCoordinate)
   .catch(apiError);
@@ -38,7 +38,7 @@ function displayCoordinate(result) {
   let x_lat = location.lat;
   let y_lon = location.lng;
  
-  fetch('http://api.openweathermap.org/data/2.5/weather?lat=' + x_lat + '&lon=' + y_lon + '&appid=' + API_KEY_WEATHER)
+  fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + x_lat + '&lon=' + y_lon + '&appid=' + API_KEY_WEATHER)
   .then(response => response.json())
   .then(displayWeather)
   .catch(apiError)
