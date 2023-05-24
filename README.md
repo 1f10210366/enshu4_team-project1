@@ -10,7 +10,7 @@
  
  　・日記の投稿、編集、削除、一覧表示
   
- 　・天気検索（google map APIを利用した、検索した場所の気温などがわかる）
+ 　・天気検索（google map API,Weather map APIとの連携、検索した場所の気温などがわかる）
   
  　・スケジュール表（google calender APIとの連携）
   
