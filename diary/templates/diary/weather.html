@@ -41,7 +41,7 @@
           </tr>
         </table>
       </div>
-
+    
       <div id="right">
         <ul>
           <li>緯度 : <span id="latitude">***</span></li>
@@ -49,16 +49,17 @@
         </ul>
         <div id="map"></div>
       </div>
-
+    
       <div>
         <th><a href="{% url 'diary:home' %}">ホームに戻る</a></th>
       </div>
     </div>
-
+    
     
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYSeZRkkIEUkvEc1Ut7UYs7q0lLRZds94&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"
       async defer></script>
+    
   </body>
 
 </html>
