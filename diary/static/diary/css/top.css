@@ -33,7 +33,7 @@
 .back-ground{
   background-image: url('https://thumb.photo-ac.com/7c/7c6dc162952fdc4cda38ab926399749e_t.jpeg');
   background-color: rgba(255, 255, 255, 0.5);
-  background-size: cover;
+  background-size: auto;
   background-blend-mode: lighten;
   margin: 0; /* Add this line to remove default margin */
   height: 100vh; /* Add this line to ensure the body takes up the full viewport height */
