@@ -3,6 +3,29 @@
 {% block title %}トップ{% endblock %}
 
 {% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>top</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'diary/css/top.css' %}">
+    
+  </head>
+
+
+<header class="header01">
+    <h1 class="header01-logo">LOGO</h1>
+
+    <nav class="header01-nav">
+        <ul class="header01-list">
+            <li class="header01-item"><a href="">私たちの特徴</a></li>
+            <li class="header01-item"><a href="">サービス</a></li>
+            <li class="header01-item"><a href="">実績</a></li>
+            <li class="header01-item"><a href="">ブログ</a></li>
+            <li class="header01-item"><a href="">会社概要</a></li>
+            <li class="header01-item header01-item--contact"><a href="">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
 <div class="container">
     <h1 class="my-5">MY Diary</h1>
     <a href="{% url 'diary:login' %}" class="btn btn-outline-primary">ログイン</a>
