@@ -39,6 +39,10 @@
   height: 100vh; /* Add this line to ensure the body takes up the full viewport height */
 }
 
+h1{
+  font-family:"Times New Roman";
+}
+
 body{
   margin: 0;
   padding: 0;
