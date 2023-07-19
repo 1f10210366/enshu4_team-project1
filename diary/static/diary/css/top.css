@@ -32,7 +32,7 @@
 
 .back-ground{
   background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230518/pngtree-journal-with-pens-on-a-wooden-table-image_2531412.png');
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   background-size: cover;
   background-blend-mode: lighten;
   margin: 0; /* Add this line to remove default margin */
