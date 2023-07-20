@@ -20,6 +20,13 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 
 from . import forms
 
+#signup
+from django.contrib.auth import login
+from django.urls import reverse_lazy
+
+from .forms import SignUpForm
+
+
 
 class TopView(TemplateView):
     template_name = "diary/top.html"
@@ -87,3 +94,15 @@ class DiaryDeleteView(DeleteView):
       success_url = self.get_success_url()
       self.object.delete()
       return HttpResponseRedirect(success_url)
+    
+
+class SignUpView(CreateView):
+    form_class = SignUpForm
+    template_name = "diary/signup.html"
+    success_url = reverse_lazy("diary:top")
+
+    def form_valid(self, form):
+        user = form.save()
+        login(self.request, user)
+        self.object = user
+        return HttpResponseRedirect(self.get_success_url())
