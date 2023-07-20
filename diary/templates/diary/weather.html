@@ -1,4 +1,10 @@
 {% load static %}
+{% extends "diary/base.html" %}
+
+{% block title %}トップ{% endblock %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 
@@ -7,12 +13,25 @@
     <title>天気を調べよう！</title>
     <link rel="stylesheet" type="text/css" href="{% static 'diary/css/weather.css' %}">
     <script src="{% static 'diary/js/weather.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
 
   <body>
-    <div id="header">
-      <img src="https://previews.123rf.com/images/tmricons/tmricons1707/tmricons170700759/81207420-%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%97-%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E3%80%82.jpg" alt="ロゴ">
-    </div>
+    <header class="header01">
+      <h1 class="header01-logo">Diary</h1>
+  
+      <nav class="header01-nav">
+          <ul class="header01-list">
+              <li class="header01-item"><a href="">使い方</a></li>
+              <li class="header01-item"><a href="">SNS</a></li>
+              <li class="header01-item"><a href="">ポートフォリオ</a></li>
+              <li class="header01-item"><a href=""></a></li>
+              <li class="header01-item"><a href=""></a></li>
+              <li class="header01-item header01-item--contact"><a href="">お問い合わせ</a></li>
+          </ul>
+      </nav>
+  </header>
+
     <div id="container">
       <h1>天気を調べよう！</h1>
       <p>
@@ -59,6 +78,12 @@
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYSeZRkkIEUkvEc1Ut7UYs7q0lLRZds94&callback=initMap"
       async defer></script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 
 </html>
