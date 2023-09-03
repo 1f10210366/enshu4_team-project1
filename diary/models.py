@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 import uuid
+#ログインユーザごとにデータの切り替え
+
 
 
 class Diary(models.Model):
@@ -10,3 +12,4 @@ class Diary(models.Model):
     text = models.CharField(verbose_name='本文', max_length=400)
     created_at = models.DateTimeField(verbose_name='作成日時', default=timezone.now)
     updated_at = models.DateTimeField(verbose_name='編集日時', blank=True, null=True)
+    contributer = models.CharField(max_length=50, null=True) # ここに追加しました。
