@@ -8,10 +8,6 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-def get_default_contributor():
-    return User.objects.filter(is_superuser=True).first()
-
-
 class Diary(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     date = models.DateField(verbose_name='日付', default=timezone.now)
@@ -21,4 +17,7 @@ class Diary(models.Model):
     updated_at = models.DateTimeField(verbose_name='編集日時', blank=True, null=True)
 
     
-    contributor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, default=get_default_contributor)
+
+    default_contributor = User.objects.filter(is_superuser=True).first()
+
+    contributor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, default=default_contributor.pk)
