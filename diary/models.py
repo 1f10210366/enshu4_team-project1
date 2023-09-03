@@ -21,4 +21,4 @@ class Diary(models.Model):
     updated_at = models.DateTimeField(verbose_name='編集日時', blank=True, null=True)
 
     
-    #contributor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, default=get_default_contributor)
+    contributor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, default=get_default_contributor)
