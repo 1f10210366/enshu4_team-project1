@@ -10,12 +10,13 @@
         <div>
             <h1>日記の一覧</h1>
             <!--{% if user.get_username == item.contributer %}--> 
-            {% for diary in diary_list %}
-            <p>
-                {{ diary.date }}
-                <a href="{% url 'diary:diary_detail' diary.pk %}">{{ diary.title }}</a>
-            </p>
-            {%endfor%}
+                <ul>
+                    {% for diary in diary_list %}
+                        <li>
+                            {{ diary.date }} - <a href="{% url 'diary:diary_detail' diary.pk %}">{{ diary.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
             <!--{% endif %}-->
         <a href="{% url 'diary:diary' %}">戻る</a>
         </div>
