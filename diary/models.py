@@ -18,7 +18,6 @@ class Diary(models.Model):
 
     
 
-    def default_contributor():
-        return User.objects.filter(is_superuser=True).first()
+    default_contributor = User.objects.filter(is_superuser=True).first()
 
-    contributor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, default=default_contributor)
+    contributor = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, default=default_contributor.pk)
