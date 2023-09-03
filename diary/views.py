@@ -66,6 +66,16 @@ class DiaryCreateCompleteView(TemplateView):
 class DiaryListView(ListView):
     template_name = 'diary/diary_list.html'
     model = Diary
+    context_object_name = 'diary_list'
+
+    def get_queryset(self):
+        # ログインユーザの情報を取得
+        user = self.request.user
+
+        # ログインユーザの日記のみをフィルタリングして取得
+        queryset = Diary.objects.filter(contributor=user)
+
+        return queryset
 
 class DiaryDetailView(DetailView):
     template_name = 'diary/diary_detail.html'
