@@ -9,7 +9,7 @@
     <body>
         <div>
             <h1>日記の一覧</h1>
-            {% if user.get_username == item.contributer %}
+            <!--{% if user.get_username == item.contributer %}--> 
                 <ul>
                     {% for diary in diary_list %}
                         <li>
@@ -17,7 +17,7 @@
                         </li>
                     {% endfor %}
                 </ul>
-            {% endif %}
+            <!--{% endif %}-->
         <a href="{% url 'diary:diary' %}">戻る</a>
         </div>
     </body>
