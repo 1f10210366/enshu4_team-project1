@@ -156,28 +156,3 @@ cython_debug/
 # End of https://www.toptal.com/developers/gitignore/api/django
 
 
-# Ignore user-specific directories and files
-Application\ Data/
-Cookies/
-Local\ Settings/
-My\ Documents/
-NetHood/
-PrintHood/
-Recent/
-SendTo/
-Templates/
-スタート\ メニュー/
-NTUSER.DAT
-NTUSER.DAT{b07d9cbe-ee20-11ed-bb49-00155deaf33e}.TM.blf
-NTUSER.DAT{b07d9cbe-ee20-11ed-bb49-00155deaf33e}.TMContainer00000000000000000001.regtrans-ms
-NTUSER.DAT{b07d9cbe-ee20-11ed-bb49-00155deaf33e}.TMContainer00000000000000000002.regtrans-ms
-OneDrive\ -\ toyo.jp/
-OneDrive/
-Untitled.ipynb
-Untitled1.ipynb
-Untitled2.ipynb
-Untitled3.ipynb
-...
-
-# Ignore Python virtual environment
-venv/
