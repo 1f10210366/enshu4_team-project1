@@ -8,6 +8,6 @@ class Diary(models.Model):
     title = models.CharField(verbose_name='タイトル', max_length=40)
     text = models.CharField(verbose_name='本文', max_length=400)
     created_at = models.DateTimeField(verbose_name='作成日時', default=timezone.now)
-
     updated_at = models.DateTimeField(verbose_name='編集日時', blank=True, null=True)
-    
+
+    contributer = models.CharField(max_length=50, null=True) 
