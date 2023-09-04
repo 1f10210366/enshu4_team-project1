@@ -10,7 +10,7 @@
         <div>
 
         <h1>日記の一覧</h1>
-        {% for diary in object_list %}
+        {% for diary in diary_list %}
             {% if user.get_username == diary.contributer %}
                 <p>
                     {{ diary.date }}
