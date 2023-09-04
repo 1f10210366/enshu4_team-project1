@@ -63,7 +63,7 @@ class DiaryCreateView(CreateView):
 class DiaryCreateCompleteView(TemplateView):
   template_name = 'diary/diary_create_complete.html'
 
-class DiaryListView(ListView):
+class DiaryListView(LoginRequiredMixin,ListView):
     template_name = 'diary/diary_list.html'
     model = Diary
     # クエリセットのカスタマイズが必要な場合
