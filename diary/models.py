@@ -10,4 +10,4 @@ class Diary(models.Model):
     created_at = models.DateTimeField(verbose_name='作成日時', default=timezone.now)
 
     updated_at = models.DateTimeField(verbose_name='編集日時', blank=True, null=True)
-    contributer = models.CharField(max_length=50, null=True)
+    
