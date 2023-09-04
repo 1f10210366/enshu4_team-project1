@@ -67,9 +67,9 @@ class DiaryListView(ListView):
     template_name = 'diary/diary_list.html'
     model = Diary
    
-#def mypagefunc(request):
-    #object_list = diary.objects.all()
-    #return render(request, 'diary/diary_list.html', {'object_list': object_list})
+def mypagefunc(request):
+    object_list = diary.objects.all()
+    return render(request, 'diary/diary_list.html', {'object_list': object_list})
 
     
 class DiaryDetailView(DetailView):
