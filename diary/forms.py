@@ -15,11 +15,12 @@ class LoginForm(AuthenticationForm):
 class DiaryForm(forms.ModelForm):
     class Meta:
         model = Diary
-        fields = ('date', 'title', 'text',)
+        fields = ('date', 'title', 'text','image')
         widgets = {
             'date': forms.DateInput(attrs={'class': 'form-control'}),
             'title': forms.TextInput(attrs={'class': 'form-control'}),
             'text': forms.Textarea(attrs={'class': 'form-control'}),
+            'image': forms.ClearableFileInput(attrs={'class': 'form-control-file'}),
         }
 
 class SignUpForm(UserCreationForm):

@@ -11,3 +11,4 @@ class Diary(models.Model):
     updated_at = models.DateTimeField(verbose_name='編集日時', blank=True, null=True)
 
     contributer = models.CharField(max_length=50, null=True) 
+    image = models.ImageField(upload_to='diary_images/', blank=True, null=True)
