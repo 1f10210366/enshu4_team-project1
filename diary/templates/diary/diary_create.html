@@ -13,7 +13,7 @@
         <form method="post" enctype="multipart/form-data"> 
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">投稿</button>
+        <button type="submit">記す</button>
         </form>
         <a href="{% url 'diary:diary' %}">戻る</a>
     </div>
