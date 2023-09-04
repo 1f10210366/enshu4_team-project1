@@ -66,12 +66,12 @@ class DiaryCreateCompleteView(TemplateView):
 class DiaryListView(ListView):
     template_name = 'diary/diary_list.html'
     model = Diary
+    # クエリセットのカスタマイズが必要な場合
+    def get_queryset(self):
+        # ログインユーザーの日記のみをフィルタリング
+        return Diary.objects.filter(contributer=self.request.user.get_username())
    
-def mypagefunc(request):
-    object_list = diary.objects.all()
-    return render(request, 'diary/diary_list.html', {'object_list': object_list})
 
-    
 class DiaryDetailView(DetailView):
     template_name = 'diary/diary_detail.html'
     model = Diary
