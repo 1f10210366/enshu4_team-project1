@@ -72,7 +72,7 @@ class DiaryListView(LoginRequiredMixin,ListView):
     # クエリセットのカスタマイズが必要な場合
     def get_queryset(self):
         # ログインユーザーの日記のみをフィルタリング
-        return Diary.objects.filter(contributer=self.request.user.get_username())
+        return Diary.objects.filter(contributer=self.request.user.get_username()).order_by('-created_at')
    
 
 class DiaryDetailView(DetailView):
