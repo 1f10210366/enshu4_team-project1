@@ -1,16 +1,17 @@
-{% load static %}
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ja">
 
   <head>
-    <meta charset="UTF-8">
-    <title>schedule</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'diary/css/schedule.css' %}">
-    
+      <meta charset='utf-8' />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css">
   </head>
 
   <body>
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&showTitle=1&src=amEuamFwYW5lc2UjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <div id='calendar'></div>
+
+      {% load static %}
+      <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js"></script>
+      <script src="{% static 'scheduleCalendar/app.js' %}"></script>
   </body>
 
 </html>

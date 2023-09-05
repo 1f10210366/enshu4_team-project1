@@ -12,3 +12,9 @@ class Diary(models.Model):
 
     contributer = models.CharField(max_length=50, null=True) 
     #image = models.ImageField(upload_to='diary_images/', blank=True, null=True)
+
+
+class Event(models.Model):
+    start_date = models.DateField()
+    end_date = models.DateField()
+    event_name = models.CharField(max_length=200)

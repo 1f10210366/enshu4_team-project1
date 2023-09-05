@@ -26,6 +26,11 @@ from django.urls import reverse_lazy
 
 from .forms import SignUpForm
 
+#スケジュール
+from django.template import loader
+from django.http import HttpResponse
+
+
 
 
 class TopView(TemplateView):
@@ -54,6 +59,8 @@ def diary(request):
 
 def schedule(request):
   return render(request, 'diary/schedule.html')
+
+#日記帳
 
 class DiaryCreateView(CreateView):
   template_name = 'diary/diary_create.html'
@@ -103,7 +110,7 @@ class DiaryDeleteView(DeleteView):
       self.object.delete()
       return HttpResponseRedirect(success_url)
     
-
+#ログイン
 class SignUpView(CreateView):
     form_class = SignUpForm
     template_name = "diary/signup.html"
@@ -114,4 +121,13 @@ class SignUpView(CreateView):
         login(self.request, user)
         self.object = user
         return HttpResponseRedirect(self.get_success_url())
+    
+
+ #スケジュール表
+def index(request):
+  """
+  カレンダー画面
+  """
+  template = loader.get_template("diary/schedule.html")
+  return HttpResponse(template.render())
     
