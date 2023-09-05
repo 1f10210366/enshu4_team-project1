@@ -4,17 +4,6 @@ div {
 
 }
 
-h1 {
-  color: rgb(124, 207, 231);
-
-}
-
-h2{
-  
-  padding : 5px 10px 5px 10px;
-  margin-right: 50%;
-}
-
 body {
   font-family: Arial, sans-serif;
 }
@@ -44,30 +33,5 @@ body {
 .diary-item a:hover {
   text-decoration: underline;
 }
-.header01 {
-  padding: 16px 24px;
-  background-color: #fafafa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header01-logo {
-  font-weight: bold;
-  font-size: 20px;
-}
 
-.header01-list {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.header01-item--contact {
-  background-color: #373c40;
-  color: #fff;
-  padding: 6px 16px;
-  border-radius: 6px;
-}
