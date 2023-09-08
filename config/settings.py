@@ -86,7 +86,7 @@ hostname = gethostname()
 
 if "COMPUTER-NAME" in hostname:
     # デバッグ環境
-    # DEBUG = True 
+    DEBUG = True 
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -96,16 +96,13 @@ if "COMPUTER-NAME" in hostname:
     ALLOWED_HOSTS = ['*'] 
 else:
     # 本番環境
-    # DEBUG = False
+    DEBUG = False
     
-    db_from_env = dj_database_url.config()
+    
+    db_from_env = dj_database_url.config(conn_max_age=600)
     DATABASES = {
-        'default': dj_database_url.config()
+        'default': db_from_env
     }
-
-db_from_env = dj_database_url.config(conn_max_age=600)
-DATABASES['default'].update(db_from_env)
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
