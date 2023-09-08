@@ -29,6 +29,7 @@ from .forms import SignUpForm
 #スケジュール
 import json
 from .models import Event
+from .forms import CalendarForm
 from .forms import EventForm
 from django.http import Http404
 from django.http import JsonResponse
@@ -138,7 +139,7 @@ def index(request):
     # CSRFのトークンを発行する
     get_token(request)
 
-    template = loader.get_template("scheduleCalendar/index.html")
+    template = loader.get_template("diary/suchedule.html")
     return HttpResponse(template.render())
 
 
