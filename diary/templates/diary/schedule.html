@@ -3,10 +3,27 @@
 
 <head>
   <meta charset='utf-8' />
+  <title>予定を確認しよう</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'diary/css/diary_all.css' %}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css">
 </head>
 
 <body>
+  <header class="header01">
+    <h1 class="header01-logo">Diary</h1>
+
+    <nav class="header01-nav">
+        <ul class="header01-list">
+            <li class="header01-item"><a href="">使い方</a></li>
+            <li class="header01-item"><a href="">SNS</a></li>
+            <li class="header01-item"><a href="">ポートフォリオ</a></li>
+            <li class="header01-item"><a href=""></a></li>
+            <li class="header01-item"><a href=""></a></li>
+            <li class="header01-item header01-item--contact"><a href="">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</header>
+
   <div id='calendar'></div>
 
   {% load static %}
