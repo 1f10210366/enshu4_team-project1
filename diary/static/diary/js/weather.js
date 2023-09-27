@@ -30,11 +30,7 @@ function displayCoordinate(result) {
   if (result == null) {
     return;
   }
-  if (!result || !result.results || result.results.length === 0) {
-    console.log("No valid results found.");
-    return;
-  }
-
+  
   let location = result.results[0].geometry.location;
   let lat = document.getElementById('latitude');
   let lon = document.getElementById('longitude');
