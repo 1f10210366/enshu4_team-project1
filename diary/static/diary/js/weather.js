@@ -1,4 +1,4 @@
-let API_KEY_GOOGLE = 'AIzaSyB5FPrbleKfp2c3j0Le1Mt6D2xkVKBghow';
+let API_KEY_GOOGLE = 'AIzaSyAYSeZRkkIEUkvEc1Ut7UYs7q0lLRZds94';
                 
 let API_KEY_WEATHER = '85d5fae67cde7bd6687dbf40e14e36c9';
 
