@@ -1,6 +1,6 @@
 let API_KEY_GOOGLE = 'AIzaSyB5FPrbleKfp2c3j0Le1Mt6D2xkVKBghow';
                 
-let API_KEY_WEATHER = 'ea0fd615af4fb560a1416a516e50b782';
+let API_KEY_WEATHER = '85d5fae67cde7bd6687dbf40e14e36c9';
 
 let map;
 function initMap() {
