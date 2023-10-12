@@ -81,11 +81,11 @@ button {
   height: 100%;
 }
 
-#calendar .fc-sat {
+#fullcalendar .fc-sat {
   background-color: lightblue;
 }
 
 
-#calender .fc-sun {
+#fullcalender .fc-sun {
   background-color: red;
 }
