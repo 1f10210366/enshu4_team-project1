@@ -25,15 +25,6 @@
   padding: 6px 16px;
   border-radius: 6px;
 }
-.fc-sat {
-  background-color: lightblue;
-}
-
-
-.fc-sun {
-  background-color: red;
-}
-
 
 
 .top-h1 {
@@ -90,3 +81,11 @@ button {
   height: 100%;
 }
 
+#header .fc-sat {
+  background-color: lightblue;
+}
+
+
+#header .fc-sun {
+  background-color: red;
+}
