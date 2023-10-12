@@ -79,3 +79,10 @@ button {
 #header img {
   height: 100%;
 }
+
+td.fc-sat {
+  background-color: #eaf4ff;
+}
+td.fc-sun {
+  background-color: #ffeaea;
+}
