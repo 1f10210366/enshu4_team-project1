@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 // 登録処理の呼び出し
                 axios
-                    .post("/dairy/add/", {
+                    .post("add/", {
                         start_date: info.start.valueOf(),
                         end_date: info.end.valueOf(),
                         event_name: eventName,
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         events: function (info, successCallback, failureCallback) {
 
             axios
-                .post("/diary/list/", {
+                .post("list/", {
                     start_date: info.start.valueOf(),
                     end_date: info.end.valueOf(),
                 })
