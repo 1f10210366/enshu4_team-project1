@@ -1,5 +1,6 @@
 from django import forms
 from .models import Diary
+from .models import Event
 
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.forms import UserCreationForm
@@ -29,13 +30,15 @@ class SignUpForm(UserCreationForm):
         fields = ["username", "email", "password1", "password2"]
 
 
-class EventForm(forms.Form):
-
-    start_date = forms.IntegerField(required=True)
-    end_date = forms.IntegerField(required=True)
-    event_name = forms.CharField(required=True, max_length=32)
+class EventForm(forms.ModelForm):
+    class Meta:
+        model = Event
+        start_date = forms.IntegerField(required=True)
+        end_date = forms.IntegerField(required=True)
+        event_name = forms.CharField(required=True, max_length=32)
 
 class CalendarForm(forms.Form):
-
-    start_date = forms.IntegerField(required=True)
-    end_date = forms.IntegerField(required=True)
+   class Meta:
+     model = Event
+     start_date = forms.IntegerField(required=True)
+     end_date = forms.IntegerField(required=True)
