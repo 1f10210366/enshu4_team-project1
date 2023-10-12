@@ -71,7 +71,7 @@ function displayWeather(result) {
   
   city.textContent = result.name;
   weather.textContent = result.weather[0].main;
-  temperature.textContent = result.main.temp;
+  temperature.textContent = (result.main.temp - 273.15).toFixed(1);
   humidity.textContent = result.main.humidity;
   pressure.textContent = result.main.pressure;
 
