@@ -12,13 +12,14 @@ document.addEventListener('DOMContentLoaded', function () {
         selectable: true,
         select: function (info) {
             //alert("selected " + info.startStr + " to " + info.endStr);
+            // 入力ダイアログ
+            const eventName = prompt("イベントを入力してください");
 
             
 
             if (eventName) {
 
-                // 入力ダイアログ
-                const eventName = prompt("イベントを入力してください");
+                
                 // 登録処理の呼び出し
                 axios
                     .post("/sc/add/", {
