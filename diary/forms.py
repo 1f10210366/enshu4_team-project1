@@ -32,13 +32,13 @@ class SignUpForm(UserCreationForm):
 
 class EventForm(forms.ModelForm):
     class Meta:
-        model = Event
+        model = Eventfields = ('start_date', 'end_date', 'event_name')
         start_date = forms.IntegerField(required=True)
         end_date = forms.IntegerField(required=True)
         event_name = forms.CharField(required=True, max_length=32)
 
 class CalendarForm(forms.Form):
    class Meta:
-     model = Event
+     fields = ['start_date', 'end_date']
      start_date = forms.IntegerField(required=True)
      end_date = forms.IntegerField(required=True)
