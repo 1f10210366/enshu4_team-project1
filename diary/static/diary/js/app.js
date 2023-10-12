@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         events: function (info, successCallback, failureCallback) {
 
             axios
-                .post("diary/list2/", {
+                .post("diary/lst/", {
                     start_date: info.start.valueOf(),
                     end_date: info.end.valueOf(),
                 })
