@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             
 
-            if (eventName) {
+            if (eventName !== null) {
 
                 
                 // 登録処理の呼び出し
