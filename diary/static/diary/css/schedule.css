@@ -80,9 +80,12 @@ button {
   height: 100%;
 }
 
-td.fc-sat {
-  background-color: #eaf4ff;
+.fc-sat {
+  background-color: lightblue;
 }
-td.fc-sun {
-  background-color: #ffeaea;
+
+
+.fc-sun {
+  background-color: red;
 }
+
