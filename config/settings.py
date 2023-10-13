@@ -12,10 +12,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
-#import psycopg2
+import psycopg2
 import dj_database_url
 from socket import gethostname
-
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

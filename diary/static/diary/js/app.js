@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 // 登録処理の呼び出し
                 axios
-                    .post("schecule/add/", {
+                    .post("schedule/add/", {
                         start_date: info.start.valueOf(),
                         end_date: info.end.valueOf(),
                         event_name: eventName,
