@@ -13,32 +13,32 @@ h1 {
   color: #333;
 }
 
-/* ナビゲーションメニューのスタイル */
 .header01 {
-  background-color: #007bff; /* ヘッダーの背景色をブルーに設定 */
-  color: #fff; /* ヘッダーテキストの色をホワイトに設定 */
-  padding: 15px 0; /* 上下の余白を追加 */
+  padding: 16px 24px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header01-logo {
-  /* ロゴのスタイルをカスタマイズ（必要に応じて） */
-}
-
-.header01-nav ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
-
-.header01-list li {
-  display: inline;
-  margin: 0 15px;
-}
-
-.header01-list a {
-  color: #fff;
-  text-decoration: none;
   font-weight: bold;
+  font-size: 20px;
+}
+
+.header01-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header01-item--contact {
+  background-color: #373c40;
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 6px;
 }
 
 /* ボタンのスタイル */
