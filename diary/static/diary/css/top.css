@@ -83,7 +83,7 @@ h1 {
 
 
 /* バックグラウンドのスタイル */
-.back-ground {
+.background {
   background: linear-gradient(135deg, #4f8ff7, #3b7fc4); /* グラデーションの背景色を設定 */
   background-size: 200% 200%; /* グラデーションのサイズを指定 */
   animation: gradientAnimation 10s ease infinite; /* グラデーションのアニメーションを設定 */
