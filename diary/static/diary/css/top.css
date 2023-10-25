@@ -1,53 +1,82 @@
-/* ------------------------------ */
-/* sample01 */
-/* ------------------------------ */
+/* カスタムCSSスタイルをここに追加してください */
 
+/* ページ全体の背景色を指定 */
+body {
+  background-color: #f5f5f5;
+}
+
+/* タイトルのスタイル */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* ナビゲーションメニューのスタイル */
 .header01 {
-  padding: 16px 24px;
-  background-color: #fafafa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #007bff; /* ヘッダーの背景色をブルーに設定 */
+  color: #fff; /* ヘッダーテキストの色をホワイトに設定 */
+  padding: 15px 0; /* 上下の余白を追加 */
 }
 
 .header01-logo {
-  font-weight: bold;
-  font-size: 20px;
+  /* ロゴのスタイルをカスタマイズ（必要に応じて） */
 }
 
-.header01-list {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.header01-item--contact {
-  background-color: #373c40;
-  color: #fff;
-  padding: 6px 16px;
-  border-radius: 6px;
-}
-
-.back-ground{
-  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20230518/pngtree-journal-with-pens-on-a-wooden-table-image_2531412.png');
-  background-color: rgba(255, 255, 255, 0.2);
-  background-size: cover;
-  background-blend-mode: lighten;
-  margin: 0; /* Add this line to remove default margin */
-  height: 100vh; /* Add this line to ensure the body takes up the full viewport height */
-}
-
-h1{
-  font-family:"Times New Roman";
-}
-
-body{
-  margin: 0;
+.header01-nav ul {
+  list-style: none;
   padding: 0;
+  text-align: center;
 }
 
-.row{
-  padding-top:10px;
+.header01-list li {
+  display: inline;
+  margin: 0 15px;
 }
+
+.header01-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ボタンのスタイル */
+.btn {
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* ボタンのカラースタイル */
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+/* カラースタイルにホバーエフェクトを追加 */
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* バックグラウンドコンテナのスタイル */
+.back-ground {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* コンテナ内のボタンスタイル */
+.container .btn {
+  margin-top: 10px;
+}
+
+/* フッターのスタイル（必要に応じてカスタマイズ） */
+/* .footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+} */
