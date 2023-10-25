@@ -80,3 +80,20 @@ h1 {
   text-align: center;
   padding: 10px 0;
 } */
+
+
+/* バックグラウンドのスタイル */
+.background {
+  background: linear-gradient(135deg, #4f8ff7, #3b7fc4); /* グラデーションの背景色を設定 */
+  background-size: 200% 200%; /* グラデーションのサイズを指定 */
+  animation: gradientAnimation 10s ease infinite; /* グラデーションのアニメーションを設定 */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* グラデーションの開始位置 */
+  }
+  100% {
+    background-position: 100% 50%; /* グラデーションの終了位置 */
+  }
+}
