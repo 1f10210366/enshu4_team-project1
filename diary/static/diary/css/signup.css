@@ -1,0 +1,50 @@
+
+.form {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* フォーム内のフォームグループにスタイルを適用 */
+.form-group {
+  margin: 10px 0;
+}
+
+/* フォームラベルのスタイル */
+.form-group label {
+  font-weight: bold;
+  display: block;
+}
+
+/* フォームフィールドのスタイル */
+.form-group input[type="text"], .form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* エラーメッセージのスタイル */
+.form-group .error-message {
+  color: #f00;
+}
+
+/* ボタンのスタイル */
+.form-group button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ボタンのホバースタイル */
+.form-group button:hover {
+  background-color: #0056b3;
+}
