@@ -16,37 +16,17 @@
 </head>
 
 <body>
-    <header class="header01">
-        <h1 class="header01-logo">My Diary</h1>
-    
-        <nav class="header01-nav">
-            <ul class="header01-list">
-                <li class="header01-item"><a href="">使い方</a></li>
-                <li class="header01-item"><a href="">SNS</a></li>
-                <li class="header01-item"><a href="">ポートフォリオ</a></li>
-                <li class="header01-item"><a href=""></a></li>
-                <li class="header01-item"><a href=""></a></li>
-                <li class="header01-item header01-item--contact"><a href="">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="particles"></div>
-    
-    <h1></h1>
-
-    <div class="praticles">
-        <div class="overlay">
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <a href="{% url 'diary:login' %}" class="btn btn-outline-primary btn-block">ログイン</a>
-                </div>
-                <div class="col-12">
-                    <a href="{% url 'diary:signup' %}" class="btn btn-outline-primary btn-block">ユーザ登録</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="particles">
+        <div class="overlay"></div>
+        <div id="intro">
+          <h1>My Diary<br>welcom!</h1>
+          <div class="col-12 mb-3">
+            <a href="{% url 'diary:login' %}" class="btn btn-outline-primary btn-block">ログイン</a>
+          </div>
+          <div class="col-12">
+            <a href="{% url 'diary:signup' %}" class="btn btn-outline-primary btn-block">ユーザ登録</a>
+          </div>
+      </div>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
